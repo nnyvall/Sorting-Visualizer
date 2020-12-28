@@ -5,4 +5,5 @@ Sorting algorithms include:
 * Insertion Sort
 * Selection Sort
  
+ ### Demo
 ![Alt Text](https://media.giphy.com/media/xPcV6ePH7IDbTKivzv/giphy.gif)
