@@ -17,7 +17,9 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             primaryStage.setTitle("Sorting Visualizer");
-            primaryStage.setScene(new Scene(new ViewController(), ViewController.WIDTH, ViewController.HEIGHT));
+            Scene mainScene = new Scene(new ViewController(), ViewController.WIDTH, ViewController.HEIGHT);
+            mainScene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+            primaryStage.setScene(mainScene);
             primaryStage.setResizable(false);
             primaryStage.show();
         } catch (Exception e) {

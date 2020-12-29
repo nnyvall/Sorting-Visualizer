@@ -35,8 +35,7 @@ public class GraphVisualizer extends StackPane {
      */
     public GraphVisualizer() {
         Algorithms algorithms = new Algorithms(this);
-        this.setStyle("-fx-background-radius: 18 18 18 18; " +
-                "-fx-border-radius: 18 18 18 18; -fx-background-color: #FFFFFF;");
+        this.setId("graphVisualizer");
 
         /*
          * This is the animation timer for an iterative bubble sort implementation. It continually runs bubble sort,

@@ -59,15 +59,11 @@ public class ViewController extends BorderPane {
 
     /**
      * This method initializes the components of the application including buttons, sliders, choice-boxes, and labels.
-     * It assigns them actions accordingly and styles them visually.
+     * It assigns them actions accordingly.
      */
     public void initComponents() {
         //Initializing algorithm selection ChoiceBox
         algoSelect.getItems().addAll("- Select Algorithm -", "Bubble Sort", "Selection Sort", "Insertion Sort");
-        //@TODO add to style.css
-        algoSelect.setStyle("-fx-background-color: white, white; -fx-background-radius: 16.4, 15; " +
-                "-fx-background-insets: -1.4, 0;  -fx-border-radius: 15; -fx-border-width: 2; " +
-                "-fx-border-color: #353839; -fx-padding: 5; -fx-font-size: 16;");
         algoSelect.setMinSize(componentWidth, componentHeight);
         algoSelect.setMaxSize(componentWidth, componentHeight);
         algoSelect.setValue("- Select Algorithm -");
@@ -90,9 +86,6 @@ public class ViewController extends BorderPane {
         numBarSelect.setShowTickLabels(true);
         numBarSelect.setShowTickMarks(true);
         numBarSelect.setSnapToTicks(true);
-        numBarSelect.setStyle("-fx-background-color: white, white; -fx-background-radius: 16.4, 15; " +
-                "-fx-background-insets: -1.4, 0;  -fx-border-radius: 15; -fx-border-width: 2; " +
-                "-fx-border-color: #353839; -fx-padding: 5; -fx-font-size: 16;");
         numBarSelect.setMinSize(componentWidth, componentHeight);
         numBarSelect.setMaxSize(componentWidth, componentHeight);
         numBarSelect.valueProperty().addListener((observable, oldValue, newValue) -> {
@@ -104,17 +97,12 @@ public class ViewController extends BorderPane {
         });
 
         //Initializing the number of bars Label
-        numBarLabel.setStyle("-fx-background-color: white, white; -fx-background-radius: 16.4, 15; " +
-                "-fx-background-insets: -1.4, 0;  -fx-border-radius: 15; -fx-border-width: 2; " +
-                "-fx-border-color: #353839; -fx-padding: 5; -fx-font-size: 16;");
+        numBarLabel.setId("numBarLabel");
         numBarLabel.setAlignment(Pos.CENTER);
         numBarLabel.setMinSize(componentWidth, componentHeight);
         numBarLabel.setMaxSize(componentWidth, componentHeight);
 
         //Initializing the reset Button
-        resetButton.setStyle("-fx-background-color: white, white; -fx-background-radius: 16.4, 15; " +
-                "-fx-background-insets: -1.4, 0;  -fx-border-radius: 15; -fx-border-width: 2; " +
-                "-fx-border-color: #353839; -fx-padding: 5; -fx-font-size: 16;");
         resetButton.setMinSize(componentWidth, componentHeight);
         resetButton.setMaxSize(componentWidth, componentHeight);
         resetButton.setOnMousePressed(actionEvent -> graphVisualizer.resetFields());
