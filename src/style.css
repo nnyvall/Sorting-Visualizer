@@ -1,0 +1,49 @@
+#graphVisualizer {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: #FFFFFF;
+}
+
+#numBarLabel {
+    -fx-background-color: white, white;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-border-color: #353839;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+}
+
+.choice-box {
+    -fx-background-color: white, white;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-border-color: #353839;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+}
+
+.slider {
+    -fx-background-color: white, white;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-border-color: #353839;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+}
+
+.button {
+    -fx-background-color: white, white;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-border-color: #353839;
+    -fx-padding: 5;
+    -fx-font-size: 16;
+}
